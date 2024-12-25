@@ -1,1 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    margin: 0;
+  }
+  .center-me {
+    margin: 0 auto;
+    background: #BDBDBD;  
+    width: 200px;  
+  }
