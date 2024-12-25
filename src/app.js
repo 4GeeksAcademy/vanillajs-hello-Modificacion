@@ -1,30 +1,26 @@
-import "bootstrap";
-import "./style.css";
-
 window.onload = function() {
-  //write your code here
+  
+    let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+    let action = ['ate', 'peed', 'crushed', 'broke'];
+    let what = ['my homework', 'my phone', 'the car'];
+    let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
+    
+    console.log(Math.floor(Math.random())*5);
 
-  let who = ["The dog", "My grandma", "The mailman", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "my phone", "the car"];
-  let when = [
-    "before the class",
-    "when I was sleeping",
-    "while I was exercising",
-    "during my lunch",
-    "while I was praying",
-  ];
+    
+    let Who = Math.floor(Math.random() * who.length);
+   
+    let Action = Math.floor(Math.random() * action.length);
+    let What = Math.floor(Math.random() * what.length);
+    let When = Math.floor(Math.random() * when.length);
+    
+    let excuse = who[Who] + " " + action[Action] + " " + what[What] + " " + when[When];
 
-  let numRandon = Math.floor(Math.random());
 
-  let Who = numRandon * who.length;
-  let Action = numRandon * who.length;
-  let What = numRandon * who.length;
-  let When = numRandon * who.length;
+    
+    document.querySelector("#Excuse").innerHTML = excuse;
 
-  console.log("Hello Rigo from the console!");
-  let printer =
-    who[Who] + " " + action[Action] + " " + what[What] + " " + when[When];
+    // document.getElementById('#Excuse').innerHTML = excuse;
+  
 
-  document.querySelector("#excuse").innerHTML = printer;
-};
+ }
